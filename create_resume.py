@@ -27,7 +27,6 @@ corrected_output = grammarCorrector(output)
 with open("output_files/Output.txt", "w", encoding="utf-8") as text_file:
     text_file.write(corrected_output)
 
-
 #Review:
 print("Reviewing...")
 review_prompt = gemma_prefix + review_instructions + output + gemma_suffix
@@ -38,7 +37,7 @@ completion = client.completions.create(
     temperature=0.3,
     stream=False,
 )
-
+# Let's make it heirarchical
 reviewed_output = completion.choices[0].text
 reviewed_output=grammarCorrector(reviewed_output)
 with open("output_files/Output_reviewed.txt", "w", encoding="utf-8") as text_file:
