@@ -10,6 +10,8 @@ prompts/
 # C extensions
 *.so
 
+input_files/
+output_files/
 # Distribution / packaging
 .Python
 .idea
