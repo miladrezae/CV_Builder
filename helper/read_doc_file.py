@@ -13,4 +13,4 @@ academic_cv=" ".join(academic_cv.split())
 requirements_details = docx2txt.process(requirements_details_location)
 requirements_details=" ".join(requirements_details.split())
 
-academic_output = "This is the academic CV: \n" + academic_cv + "\n this is the academic published paper: \n" + academic_paper
+academic_output = "This is the academic CV: \n" + academic_cv + "\n this is my published academic paper based on my thesis: \n" + academic_paper
